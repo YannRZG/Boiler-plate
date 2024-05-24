@@ -1,0 +1,69 @@
+@import "node_modules/bootswatch/dist/lux/variables"; 
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootswatch/dist/lux/bootswatch";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* Variables de couleurs */
+:root {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --azur: #64ffda;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--azur); /* Couleur de fond par défaut */
+  --accent: var(--white); /* Couleur du texte par défaut */
+
+  --github-icon-dark: #FFFFFF; /* Couleur blanche en mode sombre */
+  --github-icon-light: #000000; /* Couleur noire en mode clair */
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // Hauteur de 100% de la fenêtre
+    background-color: #f9f9f9; // Couleur de fond claire
+  
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+
+    }
+  }
+
+  /* Thème clair */
+.light-theme nav a {
+  color: #000;
+}
+
+/* Thème sombre */
+.dark-theme nav a {
+  color: var(--white);
+}
+
+/* Thèmes */
+.light-theme {
+  background-color: var(--white);
+  color: #000;
+  /* Autres styles pour le thème clair */
+}
+
+.dark-theme {
+  background-color: #000;
+  color: var(--white);
+  /* Autres styles pour le thème sombre */
+}
